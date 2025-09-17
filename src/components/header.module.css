@@ -1,0 +1,57 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(221, 211, 211);
+    position: sticky;
+    top: 0;
+    z-index: 15;
+}
+
+.navDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.aside_active{
+    left: 1px;
+}
+
+aside{
+    height: 100vh;
+    background: #beb9b9;
+    width: 100%;
+    max-width: 300px;
+    transition: 800ms ease;
+    position: absolute;
+    left: -500px;
+}
+
+.logo{
+    height: 50px;
+}
+
+
+.panelIcon:hover{
+    scale: 1.2;
+    cursor: pointer;
+    color: black;
+}
+.aside_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    top: 50px;
+}
+
+@media (max-width: 800px){
+    aside{
+        max-width: 150px;
+        width: 100%;
+    }
+}
