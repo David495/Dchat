@@ -28,6 +28,7 @@ aside{
     transition: 800ms ease;
     position: absolute;
     left: -500px;
+    z-index: 20;
 }
 
 .logo{
